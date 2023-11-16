@@ -125,3 +125,8 @@ button:focus {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.load-more {
+	display:block; 
+	margin: 0 auto;
+}
