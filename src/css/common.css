@@ -2,13 +2,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color:rgb(209, 234, 232);
+  --text-color: #2E2F42;
+
+  --button-background-color:#f4f4fd;
+  --button-focus-color:rgba(18, 156, 131, 0.776);
+  --button-text-focus:#fafafa;
+
+  --card-background:rgb(181, 200, 197);
+  }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(209, 234, 232);
-  color: #212121;
+  background-color: var(--background-color);
+  color: var(--text-color);
   line-height: 1.5;
 }
 
@@ -21,8 +31,7 @@ img {
   display: block;
   max-width: 100%;
   border: 1px solid #0d161b;
-  /* border-radius: 5px; */
-}
+  }
 
 .is-hidden {
   position: absolute;
@@ -67,17 +76,17 @@ button {
   height: 40px;
   font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: var(--text-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #fafafa;
+  background-color: var(--button-background-color);
 }
 
 button:hover,
 button:focus {
-  color: #fafafa;
-  background-color: rgba(18, 156, 131, 0.776);
+  color: var(--button-text-focus);
+  background-color: var(--button-focus-color);
   border: 1px solid #fafafa;
 }
 
@@ -91,7 +100,7 @@ button:focus {
 
 .photo-card {
   width: 280px;
-  background-color: #dcdcdc;
+  background-color: var(--card-background);
   border-radius: 5px;
   padding: 0px;
 }
