@@ -68,6 +68,7 @@ input {
   border-radius: 5px;
 }
 
+
 button {
   display: flex;
   align-items: center;
@@ -83,6 +84,7 @@ button {
   background-color: var(--button-background-color);
 }
 
+
 button:hover,
 button:focus {
   color: var(--button-text-focus);
@@ -96,6 +98,15 @@ button:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+	position: absolute;
+}
+
+.load-more {
+	display:block; 
+	margin: 0 auto;
+	position: relative;
+	top: 900px;
+	left:80px;
 }
 
 .photo-card {
@@ -126,7 +137,3 @@ button:focus {
   margin-bottom: 5px;
 }
 
-.load-more {
-	display:block; 
-	margin: 0 auto;
-}
