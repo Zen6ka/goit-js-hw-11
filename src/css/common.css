@@ -104,9 +104,9 @@ button:focus {
 .load-more {
 	display:block; 
 	margin: 0 auto;
-	position: relative;
+	/* position: relative;
 	top: 900px;
-	left:80px;
+	left:80px; */
 }
 
 .photo-card {
